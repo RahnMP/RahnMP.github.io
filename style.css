@@ -102,8 +102,11 @@ p {
     min-height: 85vh;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+    padding: 80px 6%;
 
     background:
         radial-gradient(
@@ -111,6 +114,104 @@ p {
             rgba(168, 85, 247, 0.20),
             transparent 35%
         );
+
+    overflow: hidden;
+}
+
+
+/* Hero text */
+
+.hero-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(
+        90deg,
+        #a855f7,
+        #d8b4fe
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content h2 {
+    color: #eeeeee;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+
+/* Hero buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #a855f7
+    );
+
+    color: #ffffff;
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 25px rgba(168, 85, 247, 0.35);
+}
+
+
+/* Hero image */
+
+.hero-image {
+    flex: 0 0 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
 }
 
 #home h1 {
@@ -362,6 +463,33 @@ footer p {
    ======================================== */
 
 @media (max-width: 900px) {
+
+   #home {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    justify-content: center;
+}
+
+.hero-image {
+    flex: none;
+    width: 100%;
+}
+
+.hero-image img {
+    max-width: 420px;
+}
 
     nav {
         gap: 15px;
