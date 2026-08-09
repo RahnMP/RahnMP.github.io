@@ -1,1 +1,420 @@
+/* ========================================
+   GLOBAL SETTINGS
+   ======================================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07070d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(7, 7, 13, 0.95);
+    border-bottom: 1px solid #29203d;
+
+    padding: 15px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 80px 6%;
+}
+
+
+/* ========================================
+   HEADINGS
+   ======================================== */
+
+h1 {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #d0d0d8;
+    font-size: 17px;
+}
+
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+#home {
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(168, 85, 247, 0.20),
+            transparent 35%
+        );
+}
+
+#home h1 {
+    max-width: 800px;
+}
+
+#home h2 {
+    color: #eeeeee;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#home p {
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   PURPLE ACCENT
+   ======================================== */
+
+#home h1 {
+    color: #ffffff;
+}
+
+#home h1::first-line {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+a {
+    color: #a855f7;
+}
+
+#home a,
+#contact a,
+#resume a {
+    display: inline-block;
+
+    margin: 15px 10px 0 0;
+    padding: 12px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #a855f7
+    );
+
+    color: #ffffff;
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#home a:hover,
+#contact a:hover,
+#resume a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.35);
+}
+
+
+/* ========================================
+   SERVICES
+   ======================================== */
+
+#services {
+    background: #090910;
+}
+
+#services > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 23%;
+
+    min-height: 210px;
+
+    margin: 1%;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        145deg,
+        #151525,
+        #0c0c16
+    );
+
+    border: 1px solid #30294a;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#services > div h3 {
+    color: #ffffff;
+}
+
+#services > div p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+
+/* ========================================
+   PORTFOLIO
+   ======================================== */
+
+#portfolio {
+    background: #0c0b16;
+}
+
+#portfolio > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 31%;
+
+    margin: 1%;
+
+    padding: 20px;
+
+    min-height: 140px;
+
+    background: #141424;
+
+    border: 1px solid #30294a;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+#portfolio > div:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+}
+
+#portfolio > div h3 {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   ABOUT
+   ======================================== */
+
+#about {
+    background: #090910;
+}
+
+#about p {
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+#about li {
+    list-style: none;
+    margin: 8px 0;
+    color: #eeeeee;
+}
+
+#about li::before {
+    content: "✓";
+    color: #a855f7;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* ========================================
+   SKILLS
+   ======================================== */
+
+#skills {
+    background: #0c0b16;
+}
+
+#skills p {
+    max-width: 700px;
+
+    margin: 12px 0;
+    padding: 12px 20px;
+
+    background: #151525;
+
+    border-left: 4px solid #a855f7;
+
+    border-radius: 6px;
+}
+
+
+/* ========================================
+   RESUME
+   ======================================== */
+
+#resume {
+    background: #090910;
+}
+
+#resume p {
+    max-width: 600px;
+}
+
+
+/* ========================================
+   CONTACT
+   ======================================== */
+
+#contact {
+    background: #0c0b16;
+}
+
+#contact p {
+    max-width: 600px;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #050508;
+
+    border-top: 1px solid #29203d;
+}
+
+footer p {
+    font-size: 14px;
+    color: #888894;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #services > div {
+        width: 47%;
+    }
+
+    #portfolio > div {
+        width: 47%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    #home h2 {
+        font-size: 21px;
+    }
+
+    #services > div,
+    #portfolio > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
