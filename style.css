@@ -546,3 +546,138 @@ footer p {
         font-size: 12px;
     }
 }
+
+/* ========================================
+   SERVICES SECTION
+   ======================================== */
+
+#services {
+    padding: 80px 6%;
+    text-align: left;
+}
+
+#services > h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #a855f7,
+        #d8b4fe
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#services > p {
+    color: #cfcfcf;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+/* Service cards */
+
+#services > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: calc(25% - 20px);
+    min-height: 220px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background: rgba(20, 20, 40, 0.85);
+
+    border: 1px solid rgba(168, 85, 247, 0.25);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+
+/* Remove extra space on the fourth card */
+
+#services > div:nth-of-type(4) {
+    margin-right: 0;
+}
+
+
+/* Card hover */
+
+#services > div:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(168, 85, 247, 0.7);
+
+    box-shadow:
+        0 12px 35px rgba(168, 85, 247, 0.18);
+}
+
+
+/* Service title */
+
+#services h3 {
+    font-size: 23px;
+    margin-bottom: 18px;
+
+    color: #ffffff;
+}
+
+
+/* Service items */
+
+#services div p {
+    color: #cfcfcf;
+    font-size: 16px;
+
+    margin: 8px 0;
+}
+
+@media (max-width: 900px) {
+
+    #services {
+        padding: 60px 5%;
+    }
+
+    #services > h2 {
+        font-size: 32px;
+    }
+
+    #services > div {
+        display: block;
+
+        width: 100%;
+
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        min-height: auto;
+    }
+
+}
+
+
+/* ========================================
+   HERO MOBILE IMAGE FIX
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .hero-image img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}
