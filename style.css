@@ -912,3 +912,127 @@ footer p {
     }
 
 }
+
+/* ========================================
+   SKILLS - PROFESSIONAL PROGRESS BARS
+   ======================================== */
+
+#skills {
+    background: #0c0b16;
+}
+
+#skills > h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #a855f7,
+        #d8b4fe
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-intro {
+    color: #cfcfcf;
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    max-width: 850px;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+.skill-info span:first-child {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.skill-info span:last-child {
+    color: #bfa0ff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+
+    background: #181725;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #29203d;
+}
+
+.skill-progress {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #7c3aed,
+        #a855f7,
+        #d8b4fe
+    );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 12px rgba(168, 85, 247, 0.35);
+
+    transition: width 0.8s ease;
+}
+
+
+/* Skills mobile */
+
+@media (max-width: 600px) {
+
+    #skills {
+        padding: 60px 5%;
+    }
+
+    #skills > h2 {
+        font-size: 32px;
+    }
+
+    .skills-intro {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .skill {
+        margin-bottom: 22px;
+    }
+
+    .skill-info span:first-child {
+        font-size: 14px;
+    }
+
+    .skill-info span:last-child {
+        font-size: 14px;
+    }
+
+    .skill-bar {
+        height: 10px;
+    }
+
+}
