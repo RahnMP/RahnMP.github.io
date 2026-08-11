@@ -1283,3 +1283,40 @@ footer p {
     }
 
 }
+
+/* ========================================
+   FINAL MOBILE NAVIGATION
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 12px 10px;
+    }
+
+    nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        gap: 22px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        white-space: nowrap;
+
+        padding: 3px 5px;
+
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+        font-size: 13px;
+    }
+
+}
